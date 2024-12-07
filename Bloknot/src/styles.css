@@ -1,0 +1,66 @@
+/* Общие настройки стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Контейнер для всего содержимого */
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: stretch;
+}
+
+/* Боковая панель с меню записей */
+.notes-menu {
+    width: 200px;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+}
+
+/* Заголовок боковой панели */
+.notes-menu h2 {
+    margin-bottom: 20px;
+}
+
+/* Список записей */
+.notes-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Элементы списка записей */
+.notes-menu li {
+    cursor: pointer;
+    padding: 12px;
+    margin-bottom: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+/* Эффект при наведении курсора на элементы списка */
+.notes-menu li:hover {
+    background-color: #ddd;
+}
+
+/* Кнопка для создания новой записи */
+.notes-menu button {
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+/* Поле для ввода и редактирования текста */
+.note-content {
+    flex-grow: 1;
+    padding: 20px;
+    resize: none;
+}s
